@@ -15,6 +15,7 @@ const images = [
 
 const galleryEl = document.querySelector(".gallery");
 
+<<<<<<< Updated upstream
 const galleryCreate = (arrey) => {
   galleryEl.classList.add("image-list");
   const galleryItemsMarkup = arrey
@@ -27,3 +28,16 @@ const galleryCreate = (arrey) => {
 };
 
 galleryCreate(images);
+=======
+const makeGallery = (options) => {
+  const galleryMarkup = options
+    .map(({ url, alt }) => {
+      return `<li class = "gallery__item "><img src = "${url}" alt= "${alt}"></li> `;
+    })
+    .join("");
+  return galleryEl.insertAdjacentHTML("afterbegin", galleryMarkup);
+};
+
+makeGallery(images);
+console.log(galleryEl);
+>>>>>>> Stashed changes
