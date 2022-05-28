@@ -1,15 +1,3 @@
-<<<<<<< Updated upstream
-const inputEl = document.querySelector("#name-input");
-const outputEl = document.querySelector("#name-output");
-
-inputEl.addEventListener("input", OnInputSpan);
-
-function OnInputSpan(event) {
-  if (event.currentTarget.value === "") {
-    return (outputEl.textContent = "Anonimus");
-  }
-  return (outputEl.textContent = event.currentTarget.value);
-=======
 // при наборе текста в инпуте input#name-input (событие input),
 // подставляет его текущее значение в span#name-output.
 //Если инпут пустой,
@@ -26,5 +14,4 @@ function onInputChange(event) {
   } else {
     span.textContent = "Anonymous";
   }
->>>>>>> Stashed changes
 }
