@@ -8,7 +8,7 @@ calculateQuantityCategories(numbersLiItemEl);
 const calculateQuantityItem = (itemEl) => {
   itemEl.forEach((elem) => {
     const heding = elem.firstElementChild.textContent;
-    const liLenght = elem.lastElementChild.querySelectorAll("li").length;
+    const liLenght = elem.lastElementChild.children.length;
     console.log(`Category: ${heding}`);
     console.log(`Elements: ${liLenght}`);
   });
